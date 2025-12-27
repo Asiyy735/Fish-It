@@ -3,6 +3,7 @@
     VERSION: 3.1 (Update: Auto Join Classic Event + Auto Favorite Inventory Based)
 ]]
 
+
 -- =====================================================
 -- 🧹 BAGIAN 1: CLEANUP SYSTEM
 -- =====================================================
@@ -1402,10 +1403,60 @@ local function setElementVisible(name, visible)
     end)
 end
 
-local Window = WindUI:CreateWindow({ Title = "ManHub", Icon = "https://www.roblox.com/headshot-thumbnail/image?userId=9697057113&width=420&height=420&format=png", Author = "by Maman", Transparent = true })
+-- GANTI ICON DISINI: ambil headshot Roblox user 9697057113 dan set ke window + coba patch ke GUI jika WindUI tidak menerima URL langsung
+local HttpService = game:GetService("HttpService")
+
+local function GetRobloxHeadshotUrl(userId)
+    local ok, res = pcall(function()
+        return game:HttpGet(("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=%s&size=420x420&format=Png&isCircular=false"):format(userId))
+    end)
+    if not ok or not res then return nil end
+
+    local ok2, data = pcall(function() return HttpService:JSONDecode(res) end)
+    if not ok2 or not data or not data.data or not data.data[1] then return nil end
+
+    return data.data[1].imageUrl
+end
+
+local headshotUrl = GetRobloxHeadshotUrl("9697057113")
+local iconParam = headshotUrl or "chess-king"
+
+local Window = WindUI:CreateWindow({ Title = "ManHub", Icon = iconParam, Author = "by Maman", Transparent = true })
 Window.Name = GUI_NAMES.Main 
 Window:Tag({ Title = "v.1.0.0", Icon = "github", Color = Color3.fromHex("#30ff6a"), Radius = 0 })
 Window:SetToggleKey(Enum.KeyCode.H)
+
+-- Jika WindUI menolak URL untuk ikon, coba patch ikon di GUI yang dibuat (set Image property pada ImageLabel pertama)
+if headshotUrl then
+    task.spawn(function()
+        task.wait(0.6) -- beri waktu agar WindUI membuat GUI
+        local core = game:GetService("CoreGui")
+        local screenGui = core:FindFirstChild(GUI_NAMES.Main)
+        if screenGui then
+            -- cari ImageLabel pertama dan set image
+            for _, obj in ipairs(screenGui:GetDescendants()) do
+                if obj:IsA("ImageLabel") or obj:IsA("ImageButton") then
+                    pcall(function()
+                        obj.Image = headshotUrl
+                    end)
+                    break
+                end
+            end
+        else
+            -- fallback: scan descendants (kadang WindUI bikin container bernama berbeda)
+            for _, g in ipairs(core:GetChildren()) do
+                for _, obj in ipairs(g:GetDescendants()) do
+                    if obj:IsA("ImageLabel") or obj:IsA("ImageButton") then
+                        pcall(function()
+                            obj.Image = headshotUrl
+                        end)
+                        return
+                    end
+                end
+            end
+        end
+    end)
+end
 
 local TabPlayer = Window:Tab({ Title = "Player Setting", Icon = "user" })
 local TabFishing = Window:Tab({ Title = "Auto Fishing", Icon = "fish" })
@@ -1831,4 +1882,3 @@ end)
 
 task.spawn(StartAntiAFK)
 print("✅ Script v3.1 Loaded! (With AutoFavorite v4.0)")
-
