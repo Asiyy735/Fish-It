@@ -308,17 +308,20 @@ local Waypoints = {
     ["Kohana"]              = Vector3.new(-626, 16, 588),
     ["Kohana Lava"]         = Vector3.new(-594, 59, 112),
     ["Esoteric Island"]     = Vector3.new(1991, 6, 1390),
-    ["Esoteric Depths"]     = Vector3.new(3200, -1302.9, 1410),
+    ["Esoteric Depths"]     = Vector3.new(3240, -1302, 1404),
     ["Tropical Grove"]      = Vector3.new(-2132, 53, 3630),
     ["Coral Reef"]          = Vector3.new(-3138, 4, 2132),
     ["Weather Machine"]     = Vector3.new(-1517, 3, 1910),
     ["Sisyphus Statue"]     = Vector3.new(-3657, -134, -963),
     ["Treasure Room"]       = Vector3.new(-3604, -284, -1632),
-    ["Ancient Jungle"]      = Vector3.new(1485, 11, -298),
+    ["Ancient Jungle"]      = Vector3.new(1463, 8, -358),
     ["Ancient Ruin"]        = Vector3.new(6067, -586, 4714),
     ["Sacred Temple"]       = Vector3.new(1476, -22, -632),
-    ["Crater Island"]       = Vector3.new(1004, 2.3, 5150),
-    ["Cristmas Island"]     = Vector3.new(1154, 24.3 1579),
+    ["Classic Island"]      = Vector3.new(1433, 44, 2755),
+    ["Iron Cavern"]         = Vector3.new(-8798, -585, 241),
+    ["Iron Cafe"]           = Vector3.new(-8647, -548, 160),
+    ["Crater Island"]       = Vector3.new(1070, 2, 5102),
+    ["Cristmas Island"]     = Vector3.new(1175, 24, 1558),
     ["Underground Cellar"]     = Vector3.new(2135, -91, -700),
     ["Christmas Cave"]     = Vector3.new(715, -487, 8910),
 }
@@ -1828,5 +1831,3 @@ end)
 
 task.spawn(StartAntiAFK)
 print("✅ Script v3.1 Loaded! (With AutoFavorite v4.0)")
-
-
