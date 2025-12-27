@@ -1402,7 +1402,7 @@ local function setElementVisible(name, visible)
     end)
 end
 
-local Window = WindUI:CreateWindow({ Title = "ManHub", Icon = "chess-king", Author = "by Maman", Transparent = true })
+local Window = WindUI:CreateWindow({ Title = "ManHub", Icon = "https://www.roblox.com/headshot-thumbnail/image?userId=9697057113&width=420&height=420&format=png", Author = "by Maman", Transparent = true })
 Window.Name = GUI_NAMES.Main 
 Window:Tag({ Title = "v.1.0.0", Icon = "github", Color = Color3.fromHex("#30ff6a"), Radius = 0 })
 Window:SetToggleKey(Enum.KeyCode.H)
@@ -1831,3 +1831,4 @@ end)
 
 task.spawn(StartAntiAFK)
 print("✅ Script v3.1 Loaded! (With AutoFavorite v4.0)")
+
