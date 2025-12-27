@@ -317,9 +317,6 @@ local Waypoints = {
     ["Ancient Jungle"]      = Vector3.new(1463, 8, -358),
     ["Ancient Ruin"]        = Vector3.new(6067, -586, 4714),
     ["Sacred Temple"]       = Vector3.new(1476, -22, -632),
-    ["Classic Island"]      = Vector3.new(1433, 44, 2755),
-    ["Iron Cavern"]         = Vector3.new(-8798, -585, 241),
-    ["Iron Cafe"]           = Vector3.new(-8647, -548, 160),
     ["Crater Island"]       = Vector3.new(1070, 2, 5102),
     ["Cristmas Island"]     = Vector3.new(1175, 24, 1558),
     ["Underground Cellar"]     = Vector3.new(2135, -91, -700),
@@ -1831,4 +1828,5 @@ end)
 
 task.spawn(StartAntiAFK)
 print("✅ Script v3.1 Loaded! (With AutoFavorite v4.0)")
+
 
