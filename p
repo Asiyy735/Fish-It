@@ -123,7 +123,7 @@ end
 
 
 -- =======================================================
--- == SANSX PERFECTION SYSTEM (AUTO REGISTER, HIDE CHAT)
+-- == MANX PERFECTION SYSTEM (AUTO REGISTER, HIDE CHAT)
 -- =======================================================
 
 _G.AUTO_MESSAGE = "!p"
@@ -191,7 +191,7 @@ end)
 -- == PERFECTION SETTINGS
 -- =======================================================
 
-_G.PerfText = "ManHub!"
+_G.PerfText = "MogaSecretHuaaaa!"
 _G.PerfColor = ColorSequence.new({
     ColorSequenceKeypoint.new(0, Color3.fromRGB(64, 255, 118)),
     ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255, 255, 255)),
@@ -422,7 +422,7 @@ WindUI.TransparencyValue = 0.3
 local Window = WindUI:CreateWindow({
     Title = "Man Hub | Fish It",
     Icon = "rbxassetid://107675085803159",
-    Author = "By vynx_79",
+    Author = "By Maman",
     Folder = "ManHub",
     Size = UDim2.fromOffset(600, 400),
     Transparent = true,
@@ -452,7 +452,7 @@ Window:EditOpenButton({
 })
 
 local ConfigManager = Window.ConfigManager
-local myConfig = ConfigManager:CreateConfig("SansXConfig")
+local myConfig = ConfigManager:CreateConfig("ManXConfig")
 
 WindUI:SetNotificationLower(true)
 
@@ -548,7 +548,7 @@ Home:Paragraph({
 	Color = "Grey",
 	Desc = [[
 This is a script created by Escobar!.
-YouTube Channel = SansMoba
+YouTube Channel = Belom buat gess heheh
 use the script wisely.
 ]]
 })
@@ -1238,7 +1238,7 @@ _G.REReplicateCutscene = ReplicatedStorage.Packages._Index["sleitnick_net@0.2.0"
 _G.BlockCutsceneEnabled = false
 _G.REReplicateCutscene.OnClientEvent:Connect(function(rarity, player, position, fishName, data)
     if _G.BlockCutsceneEnabled then
-        print("[SansX] Cutscene diblokir:", fishName, "(Rarity:", rarity .. ")")
+        print("[ManX] Cutscene diblokir:", fishName, "(Rarity:", rarity .. ")")
         return nil -- blokir event agar tidak muncul cutscene
     end
 end)
@@ -4575,7 +4575,7 @@ if Trade and GlobalFav and GlobalFav.Variants and NotifyWarning and _G.Replion a
 else
     task.spawn(function()
         task.wait(2)
-        NotifyError("Trade V3 Load Error", "Gagal memuat fitur Trade V3. Dependensi penting (seperti Trade atau GlobalFav) tidak ditemukan. Anda mungkin salah menempelkan kode atau skrip SansMobaHub Anda tidak lengkap.", 10)
+        NotifyError("Trade V3 Load Error", "Gagal memuat fitur Trade V3. Dependensi penting (seperti Trade atau GlobalFav) tidak ditemukan. Anda mungkin salah menempelkan kode atau skrip ManHub Anda tidak lengkap.", 10)
     end)
 end
 
@@ -6108,7 +6108,7 @@ local function sendDisconnectWebhook(reason)
         Url = WebhookURL,
         Method = "POST",
         Headers = { ["Content-Type"] = "application/json" },
-        Body = HttpService:JSONEncode({ username = "SansMobaHub", embeds = { embed } })
+        Body = HttpService:JSONEncode({ username = "ManHub", embeds = { embed } })
     })
 end
 
