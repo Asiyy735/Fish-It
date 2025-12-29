@@ -1407,14 +1407,14 @@ Window.Name = GUI_NAMES.Main
 Window:Tag({ Title = "v.1.0.0", Icon = "github", Color = Color3.fromHex("#30ff6a"), Radius = 0 })
 Window:SetToggleKey(Enum.KeyCode.H)
 
-local TabPlayer = Window:Tab({ Title = "Player Setting", Icon = "https://png.pngtree.com/png-vector/20240124/ourmid/pngtree-fisherman-cartoon-illustration-png-image_11476374.png" })
-local TabFishing = Window:Tab({ Title = "Auto Fishing", Icon = "https://png.pngtree.com/png-clipart/20230913/original/pngtree-megalodon-clipart-cartoon-shark-character-illustration-with-sharp-teeth-vector-png-image_11054203.png" })
-local TabFavorite = Window:Tab({ Title = "Auto Favorite", Icon = "https://png.pngtree.com/png-clipart/20211121/original/pngtree-golden-star-3d-rendering-png-image_6948192.png" })
-local TabSell = Window:Tab({ Title = "Auto Sell", Icon = "https://cf.shopee.co.id/file/600c3670ba03cd7c6a8f8d43e1b52b59" })
-local TabWeather = Window:Tab({ Title = "Weather", Icon = "https://png.pngtree.com/png-clipart/20210711/original/pngtree-3d-weather-icon-with-rainy-and-sunny-forecast-png-image_6508380.jpg" })
-local TabTeleport = Window:Tab({ Title = "Teleport", Icon = "https://wallpaperaccess.com/full/4497875.jpg" })
-local TabWebHook = Window:Tab({ Title = "Webhook", Icon = "https://creazilla-store.fra1.digitaloceanspaces.com/icons/3211689/webhook-icon-md.png" })
-local TabSettings = Window:Tab({ Title = "Settings", Icon = "https://png.pngtree.com/png-clipart/20220628/original/pngtree-server-setting-and-preferences-png-image_8237401.png" })
+local TabPlayer = Window:Tab({ Title = "Player Setting", Icon = "https://cdn4.vectorstock.com/i/1000x1000/09/78/user-neon-label-vector-28270978.jpg" })
+local TabFishing = Window:Tab({ Title = "Auto Fishing", Icon = "https://img.freepik.com/vetores-premium/rotulo-de-neon-de-pesca_520826-7042.jpg" })
+local TabFavorite = Window:Tab({ Title = "Auto Favorite", Icon = "https://media.istockphoto.com/id/1203142341/id/vektor/bingkai-bintang-neon-atau-tanda-lampu-neon-latar-belakang-abstrak-vektor-terowongan-portal.jpg?s=170667a&w=0&k=20&c=u7ezrDeSrsbH8YZJJr_78blNJqRguy4ZgImjBJAu3Sk=" })
+local TabSell = Window:Tab({ Title = "Auto Sell", Icon = "https://images.rawpixel.com/image_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA0L3Jhd3BpeGVsX29mZmljZV81Ml9zaW1wbGVfbGluZV9uZW9uX29mX3RyYXZlbF9pY29uX2luX3RoZV9zdHlsZV9iZDQ1Mzg0Ny02MjkwLTRhM2YtOWFjZS1mMGVhNGJlZTdlOTJfMS5qcGc.jpg" })
+local TabWeather = Window:Tab({ Title = "Weather", Icon = "https://cdn2.vectorstock.com/i/1000x1000/10/86/glowing-neon-line-cloud-with-snow-rain-and-sun-vector-37061086.jpg" })
+local TabTeleport = Window:Tab({ Title = "Teleport", Icon = "https://tse4.mm.bing.net/th/id/OIP.1o3a96woCe-17zoHNYeroAHaHa?w=626&h=626&rs=1&pid=ImgDetMain&o=7&rm=3" })
+local TabWebHook = Window:Tab({ Title = "Webhook", Icon = "https://i.pinimg.com/originals/45/fc/04/45fc047a4d037ea0e090b341a46ff4e9.jpg" })
+local TabSettings = Window:Tab({ Title = "Settings", Icon = "https://media.istockphoto.com/vectors/glowing-neon-circular-saw-blade-icon-isolated-on-blue-background-saw-vector-id1223024883?k=6&m=1223024883&s=612x612&w=0&h=_4-y7Z20qgE6ImyY4bDDSZDRqhvSKHNabZsHdvp8sWM=" })
 
 -- [[ TAB PLAYER: UTILITIES ]]
 TabPlayer:Section({ Title = "Hide Name" })
