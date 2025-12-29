@@ -317,6 +317,9 @@ local Waypoints = {
     ["Ancient Jungle"]      = Vector3.new(1463, 8, -358),
     ["Ancient Ruin"]        = Vector3.new(6067, -586, 4714),
     ["Sacred Temple"]       = Vector3.new(1476, -22, -632),
+    ["Classic Island"]      = Vector3.new(1433, 44, 2755),
+    ["Iron Cavern"]         = Vector3.new(-8798, -585, 241),
+    ["Iron Cafe"]           = Vector3.new(-8647, -548, 160),
     ["Crater Island"]       = Vector3.new(1070, 2, 5102),
     ["Cristmas Island"]     = Vector3.new(1175, 24, 1558),
     ["Underground Cellar"]     = Vector3.new(2135, -91, -700),
@@ -1404,14 +1407,14 @@ Window.Name = GUI_NAMES.Main
 Window:Tag({ Title = "v.1.0.0", Icon = "github", Color = Color3.fromHex("#30ff6a"), Radius = 0 })
 Window:SetToggleKey(Enum.KeyCode.H)
 
-local TabPlayer = Window:Tab({ Title = "Player Setting", Icon = "user" })
-local TabFishing = Window:Tab({ Title = "Auto Fishing", Icon = "fish" })
-local TabFavorite = Window:Tab({ Title = "Auto Favorite", Icon = "star" })
-local TabSell = Window:Tab({ Title = "Auto Sell", Icon = "shopping-bag" })
-local TabWeather = Window:Tab({ Title = "Weather", Icon = "cloud-lightning" })
-local TabTeleport = Window:Tab({ Title = "Teleport", Icon = "map-pin" })
-local TabWebHook = Window:Tab({ Title = "Webhook", Icon = "webhook" })
-local TabSettings = Window:Tab({ Title = "Settings", Icon = "settings" })
+local TabPlayer = Window:Tab({ Title = "Player Setting", Icon = "https://png.pngtree.com/png-vector/20240124/ourmid/pngtree-fisherman-cartoon-illustration-png-image_11476374.png" })
+local TabFishing = Window:Tab({ Title = "Auto Fishing", Icon = "https://png.pngtree.com/png-clipart/20230913/original/pngtree-megalodon-clipart-cartoon-shark-character-illustration-with-sharp-teeth-vector-png-image_11054203.png" })
+local TabFavorite = Window:Tab({ Title = "Auto Favorite", Icon = "https://png.pngtree.com/png-clipart/20211121/original/pngtree-golden-star-3d-rendering-png-image_6948192.png" })
+local TabSell = Window:Tab({ Title = "Auto Sell", Icon = "https://cf.shopee.co.id/file/600c3670ba03cd7c6a8f8d43e1b52b59" })
+local TabWeather = Window:Tab({ Title = "Weather", Icon = "https://png.pngtree.com/png-clipart/20210711/original/pngtree-3d-weather-icon-with-rainy-and-sunny-forecast-png-image_6508380.jpg" })
+local TabTeleport = Window:Tab({ Title = "Teleport", Icon = "https://wallpaperaccess.com/full/4497875.jpg" })
+local TabWebHook = Window:Tab({ Title = "Webhook", Icon = "https://creazilla-store.fra1.digitaloceanspaces.com/icons/3211689/webhook-icon-md.png" })
+local TabSettings = Window:Tab({ Title = "Settings", Icon = "https://png.pngtree.com/png-clipart/20220628/original/pngtree-server-setting-and-preferences-png-image_8237401.png" })
 
 -- [[ TAB PLAYER: UTILITIES ]]
 TabPlayer:Section({ Title = "Hide Name" })
@@ -1653,7 +1656,7 @@ TabSettings:Button({
         local p = game:GetService("Players").LocalPlayer
         
         WindUI:Notify({Title = "System", Content = "Rejoining...", Duration = 3})
-        local myScript = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/syauqiaditia/roblox-uqill-fishit/refs/heads/main/uqill.lua"))()'
+        local myScript = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/Asiyy735/Fish-It/refs/heads/main/ManHub.lua"))()'
         if (syn and syn.queue_on_teleport) then
             syn.queue_on_teleport(myScript)
         elseif queue_on_teleport then
@@ -1828,5 +1831,3 @@ end)
 
 task.spawn(StartAntiAFK)
 print("✅ Script v3.1 Loaded! (With AutoFavorite v4.0)")
-
-
