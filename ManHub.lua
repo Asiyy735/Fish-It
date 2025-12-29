@@ -1402,7 +1402,7 @@ local function setElementVisible(name, visible)
     end)
 end
 
-local Window = WindUI:CreateWindow({ Title = "ManHub", Icon = "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-1997B119EA4FDF91A65C3902FE79A1E2-Png/150/150/AvatarHeadshot/Webp/noFilter", Author = "by Maman", Transparent = true })
+local Window = WindUI:CreateWindow({ Title = "ManHub", Icon = "https://cdn.discordapp.com/attachments/1417321476650172439/1455166428377518145/9697057113_121864768012064_1766850724356.png?ex=6953bcd8&is=69526b58&hm=1861fff87886b5d2b8cc563ad2b091b07f15677053251d7b8df1c96ea9cfedb9&", Author = "by Maman", Transparent = true })
 Window.Name = GUI_NAMES.Main 
 Window:Tag({ Title = "v.1.0.0", Icon = "github", Color = Color3.fromHex("#30ff6a"), Radius = 0 })
 Window:SetToggleKey(Enum.KeyCode.H)
@@ -1831,3 +1831,4 @@ end)
 
 task.spawn(StartAntiAFK)
 print("✅ Script v3.1 Loaded! (With AutoFavorite v4.0)")
+
