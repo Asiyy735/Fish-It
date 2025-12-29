@@ -1473,17 +1473,17 @@ TabFishing:Dropdown({ Title = "Category Fishing", Desc = "Select Mode", Values =
 TabFishing:Input({
     Title = "Delay Fishing",
     Desc = "Wait Fish (Blatan)",
-    Value = "1.30",
+    Value = "1.35",
     Callback = function(text)
         if not text:match("^%d*%.?%d+$") then
-            delayCharge = 1.30
-            return "1.30"
+            delayCharge = 1.35
+            return "1.35"
         end
 
         local num = tonumber(text)
         if not num then
-            delayCharge = 1.30
-            return "1.30"
+            delayCharge = 1.35
+            return "1.35"
         end
 
         delayCharge = math.clamp(num, 0, 3)
