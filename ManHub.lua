@@ -591,7 +591,7 @@ end
 local function ToggleWaterWalk(state)
     if state then
         local p = Instance.new("Part")
-        p.Name = "UQiLL_WaterPlatform"
+        p.Name = "Maman_WaterPlatform"
         p.Anchored = true
         p.CanCollide = true
         p.Transparency = 1
@@ -1267,7 +1267,7 @@ local function BuildFishPayload(player, fishId, weight)
 	local tier = fish.Tier
 
 	return {
-		username = "UQiLL Fishing Logger",
+		username = "Maman Fishing Logger",
 		embeds = {{
 			title = (RARITY_GRADIENT[tier] or "") .. " 🎣 Fish Obtained",
 			color = RARITY_COLOR[tier],
